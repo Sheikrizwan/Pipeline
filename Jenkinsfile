@@ -3,6 +3,7 @@ pipeline {
 	triggers {
 		 POLLSCM ('* * * * *')
 	}
+	
 	stages {
 		stage ('Build') {	
 			steps {
