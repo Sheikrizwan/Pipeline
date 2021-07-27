@@ -1,8 +1,10 @@
 pipeline {
-	agent none
+	agent any
+	triggers {
+	    cron (* * * * *)
+	}
 	stages {
-		stage ('Build') {
-			agent any	
+		stage ('Build') {	
 			steps {
 				echo 'Build stage'
 				}
